@@ -1,13 +1,488 @@
+
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Ts</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="ts\src\index.css">
 </head>
+
 <body>
-  <app-root></app-root>
+  <app-root>
+    <div id="aside-container">
+      <aside>
+        <header id="aside-header">SLACA 2019</header>
+        <ul id="side-menu">
+          <li id="menu-item-image-container">
+            <img src="ts\src\assets\13-SLACA.png" alt="logo 13 SLACA">
+          </li>
+          <li class="menu-item">
+            <span class="menu-item-bar desativado"></span>
+            <a href="|">Apresentação</a>
+          </li>
+          <li class="menu-item">
+            <span class="menu-item-bar desativado"></span>
+            <a href="|">Comitês</a>
+          </li>
+          <li class="menu-item">
+            <span class="menu-item-bar desativado"></span>
+            <a href="|">Autores</a>
+          </li>
+          <li class="menu-item">
+            <span class="menu-item-bar desativado"></span>
+            <a href="|">Eixos temáticos</a>
+          </li>
+          <li class="menu-item">
+            <span class="menu-item-bar ativado"></span>
+            <a href="|">Trabalhos</a>
+          </li>
+          <li class="menu-item">
+            <span class="menu-item-bar desativado"></span>
+            <a href="|">Contato</a>
+          </li>
+        </ul>
+      </aside>
+    </div>
+    <div id="main-content-container">
+      <header id="main-header">
+        <div id="main-header-title">
+          <span>Anais do Simpósio Latino Americano de Ciências de Alimentos</span>
+          <span>Anais do 13º Simpósio Latino Americano de Ciência de Alimentos</span>
+          <span>ISSN: 1234-5678</span>
+        </div>
+
+        <div id="main-header-lang-account">
+          <div id="main-header-lang">
+            <ion-icon name="globe-outline"></ion-icon>
+            <select>
+              <option value="pt-br">PT, BR</option>
+            </select>
+          </div>
+          <div id="main-header-account">
+            <div id="account-info">
+              <span>Bem vindo!</span>
+              <span>alguem12@galoascience.com</span>
+            </div>
+            <div id="account-image-notif">
+              <div id="notifications">2</div>
+              <img src="ts\src\assets\perfil.png" alt="imagem de perfil">
+            </div>
+          </div>
+        </div>
+      </header>
+      
+      <main>
+        <header id="page-title-buttons">
+          <h2>Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município
+            de Campinas/SP'</h2>
+          <div id="buttons-how">
+            <div id="title-buttons">
+              <button>
+                <a href="|">
+                  <ion-icon name="download-outline"></ion-icon>
+                  Download
+                </a>
+              </button>
+              <button>
+                <a href="|">
+                  <ion-icon name="star-outline"></ion-icon>
+                </a></button>
+              <button>
+                <a href="|"><img src="ts\src\assets\doi.png" alt="doi logo"></a>
+              </button>
+            </div>
+            <span id="title-how">COMO CITAR ESSE TRABALHO?</span>
+          </div>
+        </header>
+
+        <section id="video-quote">
+          <div id="video">
+            <span id="video-title">Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e
+              15 anos, do município de Campinas/SP'
+              <div id="video-bottom-title">
+                <div id="image-container">
+                  <img src="ts\src\assets\Beatriz Christiane Melo .png" alt="Beatriz Christiane Melo ">
+                </div>
+                <div id="bottom-caption">
+                  <span>Beatriz Christiane Melo</span>
+                  <span>FCA / Universidade Estadual de Campinas</span>
+                </div>
+              </div>
+            </span>
+            <video controls>
+              <source src="ts\src\assets\ALIVE _ Canada 4K.mp4">
+            </video>
+          </div>
+          <div id="quotation">
+            <div id="details">
+              <header id="details-header">
+                <span><strong>Detalhes</strong></span>
+              </header>
+              <div id="details-body">
+                <div class="items"><span id="tipo">Tipo de Apresentação:</span> <span
+                    id="tipo_valor"><strong>Pôster</strong></span>
+                </div>
+                <div class="items"><span id="eixo">Eixo temático:</span> <span id="eixo_valor"><strong> Alimentação e
+                      saúde (AS)</strong></span></div>
+                <div class="items"><span id="palavras">Palavras-chaves:</span> <span
+                    id="palavras_valor"><strong>Alimentos funcionais, alimentação escolar.</strong></span></div>
+                <div class="items"><span id="autores"><strong>Autores:</strong></span></div>
+                <div class="items"><span id="autor1">Galileo Galilei¹</span></div>
+                <div class="items"><span id="autor2">Berta Lange de Morretes²</span></div>
+                <div class="items"><span id="autor3">Isaac Newton<sup>³</sup></span></div>
+                <div class="items"><span id="autor4">Cesar Lattes<sup>¹</sup></span></div>
+                <div class="items"><span id="autor5">Stephen Hawking<sup>⁴</sup></span></div>
+                <div class="items"><span id="universidade1"><sup>¹</sup>Universidade Estadual de Campinas</span></div>
+                <div class="items"><span id="universidade2"><sup>²</sup>Universidade de São Paulo</span></div>
+                <div class="items"><span id="universidade3"><sup>³</sup>Instituto Nacional de Pesquisas Espaciais</span>
+                </div>
+                <div class="items"><span id="universidade4"><sup>⁴</sup>Universidade Federal do Rio de Janeiro</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="overview" class="btn-show-more" data-box-size="true">
+          <header id="overview-header">
+            <span>Resumo</span>
+          </header>
+          <article id="overview-article">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste est quo magni repellendus explicabo. Lorem
+              ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, velit veniam necessitatibus totam atque
+              autem vero amet minima eos cum quas excepturi mollitia, fugiat recusandae, aspernatur odit corrupti optio
+              tempora? Ab neque maiores accusantium error culpa nostrum assumenda harum! Excepturi eum ut obcaecati iste
+              at impedit.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste est quo magni repellendus explicabo. Lorem
+              ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, velit veniam necessitatibus totam atque
+              autem vero amet minima eos cum quas excepturi mollitia, fugiat recusandae, aspernatur odit corrupti optio
+              tempora? Ab neque maiores accusantium error culpa nostrum assumenda harum! Excepturi eum ut obcaecati iste
+              at impedit.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste est quo magni repellendus explicabo. Lorem
+              ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, velit veniam necessitatibus totam atque
+              autem vero amet minima eos cum quas excepturi mollitia, fugiat recusandae, aspernatur odit corrupti optio
+              tempora? Ab neque maiores accusantium error culpa nostrum assumenda harum! Excepturi eum ut obcaecati iste
+              at impedit.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste est quo magni repellendus explicabo. Lorem
+              ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, velit veniam necessitatibus totam atque
+              autem vero amet minima eos cum quas excepturi mollitia, fugiat recusandae, aspernatur odit corrupti optio
+              tempora? Ab neque maiores accusantium error culpa nostrum assumenda harum! Excepturi eum ut obcaecati iste
+              at impedit.</p>
+            <button id="overview-button">ver mais</button>
+          </article>
+        </section>
+
+        <section id="discussions-container">
+          <header id="discussions-container-header">
+            <span>Discussões</span>
+          </header>
+
+          <section id="new-topic-container" data-new-topic-container="true">
+            <span>Compartilhe suas ideias ou dúvidas com os autores!</span>
+            <div id="new-topic-images">
+              <img src="ts\src\assets\hand-plant.png" alt="hand-plant-logo">
+              <img src="ts\src\assets\QA.png" alt="QA-logo">
+              <img src="ts\src\assets\idea-logo.png" alt="idea-logo">
+            </div>
+            <span>Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus
+              questionamentos ou sugestões para o autor!</span>
+            <button class="btn-create-topic">
+              <ion-icon name="add-outline"></ion-icon>
+              <span id="new-topic-container-btn">criar tópico</span>
+            </button>
+          </section>
+
+          <section id="new-topic-inputs" data-new-topic-inputs="false">
+            <span>Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</span>
+            <div id="new-topic-container">
+              <div id="new-topic-header">
+                <span><strong>Assunto</strong></span>
+                <input type="text" placeholder="Defina um tópico sucinto para notificar os autores">
+              </div>
+              <div id="new-topic-content">
+                <span><strong>Conteúdo</strong></span>
+                <textarea></textarea>
+              </div>
+              <div id="new-topic-footer">
+                <button id="new-topic-inputs-btn">Enviar</button>
+              </div>
+            </div>
+          </section>
+
+          <section id="sent-topic" data-sent-topic="false">
+            <span>Seu tópico foi enviado com sucesso! :D</span>
+            <span>Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico for
+              respondido!</span>
+            <span>Descubra outros trabalhos!</span>
+            <button id="sent-topic-btn">criar novo tópico</button>
+          </section>
+
+          <section id="discussions">
+
+            <article class="comment-container" data-recently-created="true">
+              <div class="authors-feedback">
+                <span>
+                  <ion-icon name="checkmark-done-outline"></ion-icon>
+                </span>
+                <span>Aguardando feedbackdos autores</span>
+                <button id="posted-edition-button">Editar tópico</button>
+
+                <h3 class="comment-subject"></h3>
+                <span class="user-name"><strong></strong></span>
+                <p class="comment-content"></p>
+                <div class="discussions-btns-like-answers">
+                  <!--  <button class="discussions-btns">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                  </button>
+                  <button class="likes-btn">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+                  <span class="likes"><span class="like-numbs">0</span> like</span>
+                  <span class="answers"><span class="anwers-numb">0</span> Resposta</span> -->
+                </div>
+              </div>
+            </article>
+
+            <article class="comment-container">
+              <h3 class="comment-subject">Assunto da pergunta aparece aqui</h3>
+              <span class="user-name"><strong>Carlos Henrique Santos</strong></span>
+              <p class="comment-content">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da
+                análise
+                da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
+              <div class="discussions-btns-like-answers">
+                <button class="discussions-btns">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </button>
+                <button class="likes-btn">
+                  <ion-icon name="heart-outline"></ion-icon>
+                </button>
+                <span class="likes"><span class="like-numbs">1</span> like</span>
+                <span class="answers"><span class="anwers-numb">1</span> Resposta</span>
+              </div>
+            </article>
+
+            <article class="answered-topic">
+              <h3 class="ops-topic-subject">Assunto da pergunta aparece aqui</h3>
+              <span class="user-name"><strong>Carlos Henrique Santos</strong></span>
+              <p class="comment-content">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da
+                análise
+                da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
+              <div class="discussions-btns-like-answers">
+                <button class="discussions-btns">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </button>
+                <button class="likes-btn">
+                  <ion-icon name="heart-outline"></ion-icon>
+                </button>
+                <span class="likes"><span class="like-numbs">4</span> like</span>
+                <span class="answers"><span class="anwers-numb">4</span> Resposta</span>
+              </div>
+
+              <div class="comments-container" data-comments="false">
+                <div class="comments">
+                  <div class="answer-user">
+                    <span><strong>Adriano da Silva</strong></span>
+                    <div class="writters">
+                      <span><strong>Autor</strong></span>
+                      <span>
+                        <ion-icon name="checkmark-done-outline"></ion-icon>
+                      </span>
+                    </div>
+                  </div>
+                  <p>
+                    Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo
+                    formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da
+                    análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.
+                  </p>
+                </div>
+              </div>
+
+              <div class="comments-container" data-comments="false">
+                <div class="comments">
+                  <div class="answer-user">
+                    <span><strong>Carlos Henrique Santos</strong></span>
+                  </div>
+                  <p>
+                    Consegui entender melhor agora! Parece que a variação da análise da dimensão e impacto de processo
+                    formativo situado impacto de processo formativo.
+                    Obrigada pela resposta, muito interessante o seu trabalho!
+                  </p>
+                </div>
+              </div>
+              <div class="comments-container" data-comments="false">
+                <div class="comments">
+                  <div class="answer-user">
+                    <span><strong>Carmila Ferreira Andrade</strong></span>
+                    <div class="writters">
+                      <span><strong>Coautor</strong></span>
+                      <span>
+                        <ion-icon name="checkmark-done-outline"></ion-icon>
+                      </span>
+                    </div>
+                  </div>
+                  <p>
+                    Também ínteressante lembrar que o relato inscreve-se no campo da análise da dimensão e impacto de
+                    processo formativo situado impacto de processo formativo processo resente relato inscreve-se no
+                    campo
+                    da análise da dimensão e impacto de processo formativo situado impacto de processo formativo
+                    processo.
+                    Situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da
+                    dimensão e impacto de processo formativo situado impacto de processo formativo processo.
+                  </p>
+                </div>
+              </div>
+              <div class="comments-container" data-comments="false">
+                <div class="comments">
+                  <div class="answer-user">
+                    <span><strong>Ana Carolina</strong></span>
+                    <div class="writters">
+                      <span><strong>Coautor</strong></span>
+                      <span>
+                        <ion-icon name="checkmark-done-outline"></ion-icon>
+                      </span>
+                    </div>
+                  </div>
+                  <p>
+                    Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo
+                    formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da
+                    análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </section>
+        </section>
+      </main>
+      <footer>
+        <header id="footer-header">
+          <img src="ts\src\assets\footer-logo.png" alt="logo da Galoá">
+          <button>
+            <a href="|">Saiba mais</a>
+          </button>
+        </header>
+        <div id="footer-content">
+          <span><strong>Preservar a memória do evento e ampliar o acesso ao conhecimento científico</strong> gerado em
+            eventos é a razão de ser da plataforma Galoá Proceedings.</span>
+          <span>Os trabalhos publicados aqui têm maior alcance e ficam disponíveis para toda a comunidade científica,
+            mantendo aceso o debate científico fomentado pelos encontros e aumentando o impacto do evento.</span>
+        </div>
+      </footer>
+    </div>
+  </app-root>
+
+  <script>
+    const newTopicContainerBtn = document.getElementById('new-topic-container-btn')
+    const newTopicInputsBtn = document.getElementById('new-topic-inputs-btn')
+    const sentTopicBtn = document.getElementById('sent-topic-btn')
+    const newTopicContainer = document.getElementById('new-topic-container')
+    const newTopicInputs = document.getElementById('new-topic-inputs')
+    const sentTopic = document.getElementById('sent-topic')
+    const discussionsSection = document.getElementById('discussions')
+    const answeredTopic = document.querySelector('.answered-topic')
+
+    document.getElementById('overview').addEventListener('click', () => {
+      const overviewSection = document.getElementById('overview')
+      const currentSize = overviewSection.getAttribute('data-box-size')
+      const overviewButton = document.getElementById('overview-button')
+
+      if (currentSize === 'true') {
+        overviewSection.setAttribute('data-box-size', 'false')
+      } else {
+        overviewSection.setAttribute('data-box-size', 'true')
+      }
+
+      if (overviewButton.textContent === 'ver mais') {
+        overviewButton.textContent = 'ver menos';
+      } else {
+        overviewButton.textContent = 'ver mais';
+      }
+    })
+
+    newTopicContainerBtn.addEventListener('click', () => {
+      const newTopicContainerValue = newTopicContainer.getAttribute('data-new-topic-container');
+      const currentInputContainerValue = newTopicInputs.getAttribute('data-new-topic-inputs');
+
+      if (currentInputContainerValue === 'true') {
+        newTopicInputs.setAttribute('data-new-topic-inputs', 'false');
+      } else {
+        newTopicInputs.setAttribute('data-new-topic-inputs', 'true');
+      }
+
+      if (newTopicContainerValue === 'true') {
+        newTopicContainer.setAttribute('data-new-topic-container', 'false');
+      } else {
+        newTopicContainer.setAttribute('data-new-topic-container', 'true');
+      }
+    });
+
+    newTopicInputsBtn.addEventListener('click', () => {
+      const currentInputContainerValue = newTopicInputs.getAttribute('data-new-topic-inputs');
+      const sentTopicValue = sentTopic.getAttribute('data-sent-topic');
+
+      if (currentInputContainerValue === 'true') {
+        newTopicInputs.setAttribute('data-new-topic-inputs', 'false');
+      } else {
+        newTopicInputs.setAttribute('data-new-topic-inputs', 'true');
+      }
+
+      if (sentTopicValue === 'true') {
+        sentTopic.setAttribute('data-sent-topic', 'false');
+      } else {
+        sentTopic.setAttribute('data-sent-topic', 'true');
+      }
+    })
+
+    sentTopicBtn.addEventListener('click', () => {
+      const sentTopicValue = sentTopic.getAttribute('data-sent-topic')
+
+      if (sentTopicValue === 'true') {
+        sentTopic.setAttribute('data-sent-topic', 'false')
+        newTopicContainer.setAttribute('data-new-topic-container', 'true')
+      } else {
+        sentTopic.setAttribute('data-sent-topic', 'true');
+        newTopicContainer.setAttribute('data-new-topic-container', 'false')
+      }
+    })
+
+    answeredTopic.addEventListener('click', function () {
+      const commentsContainers = answeredTopic.querySelectorAll('.comments-container')
+
+      commentsContainers.forEach(function (container) {
+        if (container.style.display === 'initial') {
+          container.style.display = 'none'
+        } else {
+          container.style.display = 'initial'
+        }
+      })
+    })
+
+    newTopicInputsBtn.addEventListener('click', () => {
+      const newCommentContainer = document.querySelector('.comment-container[data-recently-created="true"]')
+      newCommentContainer.setAttribute('data-recently-created', 'false')
+    })
+  </script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
+
 </html>

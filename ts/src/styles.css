@@ -1,0 +1,926 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body app-root {
+    display: flex;
+}
+
+div#aside-container {
+    width: 20vw;
+    display: flex;
+}
+
+aside {
+    width: 20vw;
+    height: 100vh;
+    text-align: center;
+    box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+aside header#aside-header {
+    background: linear-gradient(to top, #ED7839, #FFB455);
+    color: white;
+    display: grid;
+    place-items: center;
+    font-size: clamp(15px, 3vw, 42px);
+    font-weight: 500;
+    height: 11vh;
+    font-family: "Roboto", sans-serif;
+}
+
+aside ul#side-menu {
+    font-family: "Quicksand", sans-serif;
+}
+
+aside ul li#menu-item-image-container img {
+    height: 250px;
+}
+
+aside ul li.menu-item {
+    border-bottom: 2px solid #cccccc;
+    text-align: initial;
+    display: flex;
+    font-size: 15px;
+    font-weight: 500;
+    width: 100%;
+}
+
+aside ul li.menu-item span.menu-item-bar.desativado {
+    padding: 2px;
+    background-color: none;
+}
+
+aside ul li.menu-item span.menu-item-bar.ativado {
+    padding: 2px;
+    background: linear-gradient(to top, #ED7839, #FFB455);
+}
+
+.menu-item-bar.ativado+a {
+    background-color: #fdf1eb;
+}
+
+aside ul li.menu-item a {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    padding: 3% 5%;
+    text-decoration: none;
+    font-size: 17px;
+    color: #725C5C;
+}
+
+main header#page-title-buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 0;
+    font-family: "Roboto", sans-serif;
+}
+
+main header#page-title-buttons h2 {
+    width: 70%;
+    font-family: "Roboto", sans-serif;
+    color: #ED7839
+}
+
+
+
+main header#page-title-buttons div#title-buttons {
+    display: flex;
+    justify-content: flex-end;
+    height: 50%;
+    gap: 2%;
+}
+
+main header#page-title-buttons div#buttons-how {
+    width: 28%;
+    font-weight: 500;
+    text-align: right;
+}
+
+#title-buttons button {
+    border: none;
+    background-color: #ED7839;
+    border-radius: 4px;
+    padding: 0% 5%;
+}
+
+#title-buttons button a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+}
+
+#title-buttons button a ion-icon {
+    font-size: 16px;
+}
+
+#title-buttons button a img {
+    height: 70%;
+}
+
+#title-how {
+    height: 50%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    color: #ED7839;
+    font-size: 16px;
+}
+
+div#main-content-container {
+    width: 80vw;
+}
+
+div#main-content-container>* {
+    padding: 0 3.5%;
+}
+
+div#main-content-container header#main-header {
+    display: flex;
+    justify-content: space-between;
+    height: 11vh;
+    background-color: #FDF1EB;
+}
+
+div#main-content-container header#main-header div#main-header-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div#main-content-container header#main-header div#main-header-title span {
+    color: #725c5c;
+    font-family: "Roboto", sans-serif;
+}
+
+div#main-content-container header#main-header div#main-header-title>span:nth-child(1) {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 0.3%;
+    margin-top: 1%;
+}
+
+div#main-content-container header#main-header div#main-header-title>span:nth-child(2) {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+div#main-content-container header#main-header div#main-header-title>span:nth-child(3) {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+div#main-content-container header#main-header #main-header-lang-account {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div#main-content-container header#main-header #main-header-lang-account #main-header-lang {
+    display: flex;
+    align-items: center;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    padding: 1%;
+}
+
+div#main-content-container header#main-header #main-header-lang-account #main-header-lang select {
+    color: #725c5c;
+    font-size: 14px;
+    border: none;
+    background-color: transparent;
+}
+
+div#main-content-container header#main-header #main-header-lang-account #main-header-account {
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+    font-family: "Quicksand", sans-serif;
+}
+
+div#main-content-container header#main-header #main-header-lang-account #main-header-account div#account-info {
+    color: #725c5c;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+div#main-content-container header#main-header #main-header-lang-account #main-header-account div#account-info>span:nth-child(1) {
+    font-size: 14px;
+}
+
+div#main-content-container header#main-header #main-header-lang-account #main-header-account div#account-info>span:nth-child(2) {
+    font-size: 12px;
+}
+
+div#main-content-container header#main-header #main-header-lang-account #main-header-account div#account-image-notif {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+}
+
+header#main-header #main-header-lang-account #main-header-account div#account-image-notif img {
+    width: 80%;
+}
+
+div#main-content-container header#main-header #main-header-lang-account #main-header-account div#account-image-notif #notifications {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #f85959;
+    color: white;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    font-size: 10px;
+}
+
+div#main-content-container main {}
+
+
+section#video-quote {
+    display: flex;
+    justify-content: space-between;
+    height: 66vh;
+    overflow: hidden;
+    margin-bottom: 2.5%;
+}
+
+section#video-quote div#video {
+    width: 70%;
+
+    position: relative;
+}
+
+section#video-quote div#video span#video-title {
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-size: 24px;
+    letter-spacing: 5%;
+    margin: 2.5% 2% 0% 2.5%;
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+}
+
+span#video-title div#video-bottom-title {
+    display: flex;
+    margin-top: 24%;
+}
+
+span#video-title div#video-bottom-title div#bottom-caption>span {
+    display: block;
+}
+
+span#video-title div#video-bottom-title div#bottom-caption>span:nth-child(1) {
+    font-size: 34px;
+}
+
+span#video-title div#video-bottom-title div#bottom-caption>span:nth-child(2) {
+    font-size: 20px;
+}
+
+span#video-title div#video-bottom-title div#image-container {
+    width: 10%;
+    margin-right: 15px;
+}
+
+span#video-title div#video-bottom-title div#image-container img {
+    width: 100%;
+}
+
+section#video-quote video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+section#video-quote video source {}
+
+section#video-quote div#quotation {
+    height: 100%;
+    width: 28%;
+}
+
+div#details {
+    height: 100%;
+    color: #5c5c5c;
+    border: 1px solid #f1f1f1;
+}
+
+div#details header#details-header {
+    line-height: 2;
+    background-color: #FDF1EB;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    padding-left: 4%;
+}
+
+div#details header#details-header span {
+    text-align: left;
+    display: block;
+}
+
+div#details div#details-body {
+    text-align: initial;
+    padding: 4%;
+    font-family: "Quiycksand", sans-serif;
+    overflow-y: auto;
+    height: 100%;
+}
+
+div#details div#details-body div.items {
+    font-size: 14px;
+}
+
+div#details div#details-body>div.items:nth-child(3) {
+    margin-bottom: 8%;
+}
+
+div#details div#details-body>div.items:nth-child(9) {
+    margin-bottom: 6%;
+    ;
+}
+
+#details-body .items:nth-child(4),
+#details-body .items:nth-child(5),
+#details-body .items:nth-child(6),
+#details-body .items:nth-child(7),
+#details-body .items:nth-child(8) {
+    margin-bottom: 1.4%;
+}
+
+#details-body .items:nth-child(10),
+#details-body .items:nth-child(11),
+#details-body .items:nth-child(12),
+#details-body .items:nth-child(13) {
+    color: #ada0a0;
+    font-size: 12px;
+}
+
+section#overview {
+    border: 1px solid hsl(0, 0%, 95%);
+    margin-bottom: 2.5%;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+
+section[data-box-size="true"] {
+    max-height: 189px;
+}
+
+section[data-box-size="false"] {
+    max-height: initial;
+}
+
+section#overview header#overview-header {
+    line-height: 2;
+    background-color: #FDF1EB;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    padding-left: 2%;
+}
+
+section#overview header#overview-header span {
+    text-align: left;
+    display: block;
+}
+
+section#overview article#overview-article {
+    padding: 2%;
+    color: #adadad;
+    font-family: "Quicksand", sans-serif;
+}
+
+section#overview article#overview-article p {
+    margin-bottom: 3%;
+}
+
+section#overview article#overview-article #overview-button {
+    position: absolute;
+    bottom: 2px;
+    right: 22px;
+    z-index: 1;
+    background: linear-gradient(to right, transparent, white);
+    width: 17%;
+    text-align: right;
+    border: none;
+    color: #ED7839;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+section#overview article#overview-article #overview-button:hover {
+    text-decoration: underline;
+}
+
+section#discussions-container {
+    border: 1px solid #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2.5%;
+    padding-bottom: 2%;
+}
+
+section#discussions-container header#discussions-container-header {
+    width: 100%;
+    line-height: 2;
+    background-color: #FDF1EB;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    padding-left: 2%;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+section[data-new-topic-container="true"] {
+    display: initial;
+}
+
+section[data-new-topic-container="false"] {
+    display: none;
+}
+
+section#discussions-container section#new-topic-container {
+    text-align: center;
+    border-bottom: 1px solid #f1f1f1;
+    margin-bottom: 4%;
+    padding-top: 2%;
+    width: 97%;
+}
+
+section#discussions-container section#new-topic-container div#new-topic-images {
+    margin-bottom: 2%;
+}
+
+section#discussions-container section#new-topic-container div#new-topic-images img {
+    height: 50px;
+    width: 50px;
+}
+
+section#discussions-container section#new-topic-container>span:nth-child(1) {
+    color: #ED7839;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    margin-bottom: 1.5%;
+    display: block;
+}
+
+section#discussions-container section#new-topic-container>span:nth-child(3) {
+    font-size: 14px;
+    font-weight: 400;
+    width: 55%;
+    display: block;
+    padding-bottom: 2%;
+    margin: 0 auto;
+    color: #595959;
+    font-family: "Quicksand", sans-serif;
+}
+
+section#discussions-container section#new-topic-container button {
+    display: block;
+    margin: 0 auto;
+    background: linear-gradient(to top, #ED7839, #FFB455);
+    border: none;
+    border-radius: 5px;
+    padding: .5% 1%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    margin-bottom: -20px;
+}
+
+section#discussions-container section#new-topic-container button ion-icon {
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+section[data-new-topic-inputs="true"] {
+    display: initial;
+}
+
+section[data-new-topic-inputs="false"] {
+    display: none;
+}
+
+section#discussions-container section#new-topic-inputs {
+    padding-top: 2%;
+    width: 100%;
+}
+
+section#discussions-container section#new-topic-inputs {
+    width: 97%;
+    font-size: 14px;
+    font-family: "Quicksand", sans-serif;
+    color: #5C5C5C;
+    margin-bottom: 2%;
+}
+
+section#discussions-container section#new-topic-inputs span {
+    display: block;
+    text-align: center;
+}
+
+section#discussions-container section#new-topic-inputs>span:nth-child(1) {}
+
+section#discussions-container section#new-topic-inputs div#new-topic-container span {
+    display: block;
+    text-align: initial;
+    font-family: "Quicksand", sans-serif;
+}
+
+section#discussions-container section#new-topic-inputs div#new-topic-container div#new-topic-header {
+    color: #ED7839;
+    font-size: 16px;
+    margin: 2% 0;
+}
+
+section#discussions-container section#new-topic-inputs div#new-topic-container div#new-topic-header input {
+    font-family: "Quicksand", sans-serif;
+    border: 1px solid #f1f1f1;
+    width: 100%;
+    line-height: 2;
+    padding-left: 1%;
+    padding-right: 1%;
+    border-radius: 5px;
+}
+
+section#discussions-container section#new-topic-inputs div#new-topic-container div#new-topic-content {
+    color: #ED7839;
+    font-size: 16px;
+}
+
+section#discussions-container section#new-topic-inputs div#new-topic-container div#new-topic-content textarea {
+    display: block;
+    width: 100%;
+    height: 90px;
+    border: 1px solid #f1f1f1;
+    padding: 1%;
+    resize: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+section#discussions-container section#new-topic-inputs div#new-topic-container div#new-topic-footer {
+    text-align: right;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+    background-color: #eaf1f2;
+    border: 1px solid #f1f1f1;
+    width: 100%;
+    float: right;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+section#discussions-container section#new-topic-inputs div#new-topic-container div#new-topic-footer button {
+    line-height: 2;
+    width: 20%;
+    border: none;
+    color: white;
+    background: linear-gradient(to top, #ED7839, #FFB455);
+    cursor: pointer;
+}
+
+*:focus {
+    outline: none;
+}
+
+section[data-sent-topic="true"] {
+    display: initial;
+}
+
+section[data-sent-topic="false"] {
+    display: none;
+}
+
+#sent-topic {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 97%;
+    text-align: center;
+}
+
+#sent-topic>span {
+    display: block;
+    margin-bottom: 1%;
+}
+
+#sent-topic>span:nth-child(1) {
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    color: #ED7839;
+}
+
+#sent-topic>span:nth-child(2) {
+    font-size: 14px;
+    font-family: "Quicksand", sans-serif;
+}
+
+#sent-topic>span:nth-child(3) {
+    font-family: "Quicksand", sans-serif;
+    color: #ED7839;
+    cursor: pointer;
+}
+
+#sent-topic>span:nth-child(3):hover {
+    text-decoration: underline;
+}
+
+#sent-topic button {
+    font-size: 15px;
+    background: linear-gradient(to top, #ED7839, #FFB455);
+    font-family: 'Quicksand' sans-serif;
+    width: 20%;
+    line-height: 2;
+    border: none;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+section#discussions {
+    width: 97%;
+    font-family: "Quicksand", sans-serif;
+}
+
+section#discussions .comment-container {
+    border: 1px solid #f1f1f1;
+    border-radius: 4px;
+    padding: 2%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.6%;
+}
+
+section#discussions .comment-container>* {
+    margin-bottom: 5px;
+}
+
+section#discussions .comment-container .comment-subject {
+    color: #ED7839;
+    font-size: 16px;
+}
+
+section#discussions .comment-container span.user-name {
+    font-size: 12px;
+}
+
+article.comment-container[data-recently-created="true"] {
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+article.comment-container[data-recently-created="false"] {
+    display: initial;
+}
+
+article.comment-container[data-recently-created="false"]>* {
+    padding: 0;
+}
+
+article.comment-container[data-recently-created="false"] div.authors-feedback>span:nth-child(1) {
+    font-size: 30px;
+    color: #4D4D4D;
+}
+
+article.comment-container[data-recently-created="false"] div.authors-feedback {
+    background-color: #66606027;
+}
+
+article.comment-container[data-recently-created="false"] div.authors-feedback>span:nth-child(2) {
+    color: #4D4D4D;
+    font-weight: 700;
+}
+
+article.comment-container[data-recently-created="false"] div.authors-feedback>* {
+    margin-bottom: 1%;
+}
+
+article.comment-container[data-recently-created="false"] div.authors-feedback span {
+    display: block;
+    text-align: center;
+}
+
+article.comment-container[data-recently-created="false"] div.authors-feedback button {
+    display: block;
+    width: 15%;
+    margin: 0 auto;
+    color: #ED7839;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+article.comment-container[data-recently-created="false"] div.authors-feedback button:hover {
+    text-decoration: underline;
+}
+
+.discussions-btns {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.dot {
+    display: block;
+    width: 3.4px;
+    height: 3.4px;
+    background-color: #ED7839;
+    border-radius: 50%;
+    margin: 3px auto;
+}
+
+.discussions-btns-like-answers {
+    display: flex;
+    align-items: center;
+    color: #757575;
+}
+
+.discussions-btns-like-answers>*:not(:first-child) {
+    margin-left: 10px;
+}
+
+.likes-btn {
+    background-color: #ED7839;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 27px;
+    height: 19px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.likes-btn ion-icon {
+    font-size: 18px;
+    color: white;
+    margin: 0;
+    padding: 0;
+    height: 14px;
+    width: 14px;
+}
+
+section#discussions article.answered-topic {
+    border: 1px solid #f1f1f1;
+    padding-top: 2%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.answered-topic> :nth-child(-n+4) {
+    padding-left: 2%;
+    margin-bottom: 5px;
+}
+
+section#discussions article.answered-topic h3.ops-topic-subject {
+    color: #ED7839;
+    font-size: 16px;
+}
+
+section#discussions article.answered-topic span.user-name {
+    font-size: 12px;
+}
+
+.comments-container>* {
+    padding: 2%;
+}
+
+.comments-container div.comments {
+    border-left: 1px solid #f1f1f1;
+    border-right: 1px solid #f1f1f1;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.comments-container div.comments div.answer-user {}
+
+.comments-container div.comments div.answer-user span strong {
+    font-size: 14px;
+}
+
+.comments-container div.comments div.answer-user div.writters {
+    color: #ED7839;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.answered-topic .comments-container {
+    background-color: red;
+    display: none;
+}
+
+.answered-topic .comments-container:nth-of-type(3) {
+    background-color: transparent;
+}
+
+.comments-container div.comments div.answer-user div.writters>span:nth-child(1) {
+    font-size: 14px;
+}
+
+.comments-container div.comments div.answer-user div.writters>span:nth-child(2) {
+    margin-left: 10px;
+}
+
+.comments-container div.comments div.answer-user div.writters span ion-icon {
+    font-size: 24px;
+}
+
+.comments-container>div.comments>div.answer-user:first-child,
+.comments-container>div.comments>div.answer-user:nth-child(2),
+.comments-container>div.comments>div.answer-user:nth-child(3) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7px;
+}
+
+.comments-container>div.comments>div.answer-user:first-child,
+.comments-container>div.comments>div.answer-user:nth-child(2),
+.answered-topic {}
+
+
+.comments-container[data-comments="true"] {
+    display: none;
+    background-color: #f1f1f1;
+}
+
+.comments-container[data-comments="true"] {
+    background-color: red;
+}
+
+footer {
+    border-top: 1px solid #e7e7e7;
+    display: flex;
+    color: #4D4D4D;
+    font-family: "Quicksand", sans-serif;
+    padding: 2% 5% 4% 4% !important;
+    width: 95%;
+}
+
+footer header#footer-header {
+    width: 30%;
+    margin-right: 3%;
+}
+
+footer header#footer-header img {
+    width: 100%;
+}
+
+footer header#footer-header button {
+    width: 100%;
+    border: none;
+    background-color: #71478e;
+    border-radius: 4px;
+}
+
+footer header#footer-header button a {
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    line-height: 2;
+    color: white;
+    font-size: 16px;
+}
+
+footer div#footer-content {}
+
+footer div#footer-content span {
+    display: block;
+    font-size: 16px;
+}
+
+footer div#footer-content>span:nth-child(1) {
+    margin-bottom: 1%;
+}
