@@ -161,6 +161,192 @@
           <button id="overview-button">ver mais</button>
         </article>
       </section>
+      <section id="discussions-container">
+        <header id="discussions-container-header">
+          <span>Discussões</span>
+        </header>
+
+        <section id="new-topic-container" data-new-topic-container="true">
+          <span>Compartilhe suas ideias ou dúvidas com os autores!</span>
+          <div id="new-topic-images">
+            <img src="../assets/hand-plant.png" alt="hand-plant-logo">
+            <img src="../assets/QA.png" alt="QA-logo">
+            <img src="../assets/idea-logo.png" alt="idea-logo">
+          </div>
+          <span>Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus
+            questionamentos ou sugestões para o autor!</span>
+          <button class="btn-create-topic">
+            <!-- <ion-icon name="add-outline"></ion-icon> -->
+            <span id="new-topic-container-btn">criar tópico</span>
+          </button>
+        </section>
+
+        <section id="new-topic-inputs" data-new-topic-inputs="false">
+          <span>Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</span>
+          <div id="new-topic-container">
+            <div id="new-topic-header">
+              <span><strong>Assunto</strong></span>
+              <input type="text" placeholder="Defina um tópico sucinto para notificar os autores">
+            </div>
+            <div id="new-topic-content">
+              <span><strong>Conteúdo</strong></span>
+              <textarea></textarea>
+            </div>
+            <div id="new-topic-footer">
+              <button id="new-topic-inputs-btn">Enviar</button>
+            </div>
+          </div>
+        </section>
+
+        <section id="sent-topic" data-sent-topic="false">
+          <span>Seu tópico foi enviado com sucesso! :D</span>
+          <span>Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico for
+            respondido!</span>
+          <span>Descubra outros trabalhos!</span>
+          <button id="sent-topic-btn">criar novo tópico</button>
+        </section>
+
+        <section id="discussions">
+
+          <article class="comment-container" data-recently-created="true">
+            <div class="authors-feedback">
+              <span>
+                <!-- <ion-icon name="checkmark-done-outline"></ion-icon> -->
+              </span>
+              <span>Aguardando feedbackdos autores</span>
+              <button id="posted-edition-button">Editar tópico</button>
+
+              <h3 class="comment-subject"></h3>
+              <span class="user-name"><strong></strong></span>
+              <p class="comment-content"></p>
+              <div class="discussions-btns-like-answers">
+                <!--  <button class="discussions-btns">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </button>
+                <button class="likes-btn">
+                  <ion-icon name="heart-outline"></ion-icon>
+                </button>
+                <span class="likes"><span class="like-numbs">0</span> like</span>
+                <span class="answers"><span class="anwers-numb">0</span> Resposta</span> -->
+              </div>
+            </div>
+          </article>
+
+          <article class="comment-container">
+            <h3 class="comment-subject">Assunto da pergunta aparece aqui</h3>
+            <span class="user-name"><strong>Carlos Henrique Santos</strong></span>
+            <p class="comment-content">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da
+              análise
+              da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
+            <div class="discussions-btns-like-answers">
+              <button class="discussions-btns">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </button>
+              <button class="likes-btn">
+                <!-- <ion-icon name="heart-outline"></ion-icon> -->
+              </button>
+              <span class="likes"><span class="like-numbs">1</span> like</span>
+              <span class="answers"><span class="anwers-numb">1</span> Resposta</span>
+            </div>
+          </article>
+
+          <article class="answered-topic">
+            <h3 class="ops-topic-subject">Assunto da pergunta aparece aqui</h3>
+            <span class="user-name"><strong>Carlos Henrique Santos</strong></span>
+            <p class="comment-content">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da
+              análise
+              da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
+            <div class="discussions-btns-like-answers">
+              <button class="discussions-btns">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </button>
+              <button class="likes-btn">
+                <!-- <ion-icon name="heart-outline"></ion-icon> -->
+              </button>
+              <span class="likes"><span class="like-numbs">4</span> like</span>
+              <span class="answers"><span class="anwers-numb">4</span> Resposta</span>
+            </div>
+
+            <div class="comments-container" data-comments="false">
+              <div class="comments">
+                <div class="answer-user">
+                  <span><strong>Adriano da Silva</strong></span>
+                  <div class="writters">
+                    <span><strong>Autor</strong></span>
+                    <span>
+                      <!-- <ion-icon name="checkmark-done-outline"></ion-icon> -->
+                    </span>
+                  </div>
+                </div>
+                <p>
+                  Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo
+                  formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da
+                  análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.
+                </p>
+              </div>
+            </div>
+
+            <div class="comments-container" data-comments="false">
+              <div class="comments">
+                <div class="answer-user">
+                  <span><strong>Carlos Henrique Santos</strong></span>
+                </div>
+                <p>
+                  Consegui entender melhor agora! Parece que a variação da análise da dimensão e impacto de processo
+                  formativo situado impacto de processo formativo.
+                  Obrigada pela resposta, muito interessante o seu trabalho!
+                </p>
+              </div>
+            </div>
+            <div class="comments-container" data-comments="false">
+              <div class="comments">
+                <div class="answer-user">
+                  <span><strong>Carmila Ferreira Andrade</strong></span>
+                  <div class="writters">
+                    <span><strong>Coautor</strong></span>
+                    <span>
+                      <!-- <ion-icon name="checkmark-done-outline"></ion-icon> -->
+                    </span>
+                  </div>
+                </div>
+                <p>
+                  Também ínteressante lembrar que o relato inscreve-se no campo da análise da dimensão e impacto de
+                  processo formativo situado impacto de processo formativo processo resente relato inscreve-se no
+                  campo
+                  da análise da dimensão e impacto de processo formativo situado impacto de processo formativo
+                  processo.
+                  Situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da
+                  dimensão e impacto de processo formativo situado impacto de processo formativo processo.
+                </p>
+              </div>
+            </div>
+            <div class="comments-container" data-comments="true">
+              <div class="comments">
+                <div class="answer-user">
+                  <span><strong>Ana Carolina</strong></span>
+                  <div class="writters">
+                    <span><strong>Coautor</strong></span>
+                    <span>
+                      <!-- <ion-icon name="checkmark-done-outline"></ion-icon> -->
+                    </span>
+                  </div>
+                </div>
+                <p>
+                  Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo
+                  formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da
+                  análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.
+                </p>
+              </div>
+            </div>
+          </article>
+        </section>
+      </section>
     </main>
   </div>
 </div>
