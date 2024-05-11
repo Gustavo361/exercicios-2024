@@ -456,3 +456,55 @@ div#details {
 		}
 	}
 }
+
+section#overview {
+	border: 1px solid hsl(0, 0%, 95%);
+	margin-bottom: 2.5%;
+	overflow: hidden;
+	cursor: pointer;
+	position: relative;
+	header#overview-header {
+		line-height: 2;
+		background-color: $background-color_4;
+		font-weight: 500;
+		font-family: $font-family_1;
+		padding-left: 2%;
+		font-size: 16px;
+		color: #5C5C5C;
+		span {
+			text-align: left;
+			display: block;
+		}
+	}
+	article#overview-article {
+		padding: 2%;
+		color: $color_7;
+		font-family: $font-family_2;
+		p {
+			margin-bottom: 3%;
+			font-size: 12px;
+		}
+		#overview-button {
+			position: absolute;
+			bottom: 2px;
+			right: 22px;
+			z-index: 1;
+			background: linear-gradient(to right, transparent, white);
+			width: 17%;
+			text-align: right;
+			border: none;
+			color: $color_3;
+			cursor: pointer;
+			font-weight: bold;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+section[data-box-size="true"] {
+	max-height: 189px;
+}
+section[data-box-size="false"] {
+	max-height: initial;
+}
