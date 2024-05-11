@@ -912,3 +912,44 @@ article.comment-container[data-recently-created="false"] {
 	background-color: $background-color_10;
 	background-color: $background-color_9;
 }
+
+footer {
+	border-top: 1px solid #e7e7e7;
+	display: flex;
+	color: $color_10;
+	font-family: $font-family_2;
+	padding: 2% 5% 4% 4% !important;
+	width: 95%;
+	header#footer-header {
+		width: 30%;
+		margin-right: 3%;
+		img {
+			width: 100%;
+		}
+		button {
+			width: 100%;
+			border: none;
+			background-color: $background-color_11;
+			border-radius: 4px;
+			a {
+				width: 100%;
+				display: block;
+				text-decoration: none;
+				line-height: 2;
+				color: $color_1;
+				font-size: 16px;
+			}
+		}
+	}
+	div#footer-content {
+		span {
+			display: block;
+			font-size: 12px;
+		}
+		>span {
+			&:nth-child(1) {
+				margin-bottom: 1%;
+			}
+		}
+	}
+}
