@@ -45,7 +45,18 @@
 
       <div id="main-header-lang-account">
         <div id="main-header-lang">
-          <!-- <ion-icon name="globe-outline"></ion-icon> -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path d="M256 48C141.13 48 48 141.13 48 256s93.13 208 208 208 208-93.13 208-208S370.87 48 256 48z"
+              fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" />
+            <path
+              d="M256 48c-58.07 0-112.67 93.13-112.67 208S197.93 464 256 464s112.67-93.13 112.67-208S314.07 48 256 48z"
+              fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" />
+            <path
+              d="M117.33 117.33c38.24 27.15 86.38 43.34 138.67 43.34s100.43-16.19 138.67-43.34M394.67 394.67c-38.24-27.15-86.38-43.34-138.67-43.34s-100.43 16.19-138.67 43.34"
+              fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
+            <path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"
+              d="M256 48v416M464 256H48" />
+          </svg>
           <select>
             <option value="pt-br">PT, BR</option>
           </select>
@@ -70,13 +81,19 @@
           <div id="title-buttons">
             <button>
               <a href="|">
-                <!-- <ion-icon name="download-outline"></ion-icon> -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor">
+                  <path
+                    d="M376 160H272v153.37l52.69-52.68a16 16 0 0122.62 22.62l-80 80a16 16 0 01-22.62 0l-80-80a16 16 0 0122.62-22.62L240 313.37V160H136a56.06 56.06 0 00-56 56v208a56.06 56.06 0 0056 56h240a56.06 56.06 0 0056-56V216a56.06 56.06 0 00-56-56zM272 48a16 16 0 00-32 0v112h32z" />
+                </svg>
                 Download
               </a>
             </button>
             <button>
               <a href="|">
-                <!-- <ion-icon name="star-outline"></ion-icon> -->
+                <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path
+                    d="M394 480a16 16 0 01-9.39-3L256 383.76 127.39 477a16 16 0 01-24.55-18.08L153 310.35 23 221.2a16 16 0 019-29.2h160.38l48.4-148.95a16 16 0 0130.44 0l48.4 149H480a16 16 0 019.05 29.2L359 310.35l50.13 148.53A16 16 0 01394 480z" />
+                </svg>
               </a></button>
             <button>
               <a href="|"><img src="../assets/doi.png" alt="doi logo"></a>
@@ -85,6 +102,7 @@
           <span id="title-how">COMO CITAR ESSE TRABALHO?</span>
         </div>
       </header>
+      
       <section id="video-quote">
         <div id="video">
           <span id="video-title">Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e
@@ -114,8 +132,8 @@
               </div>
               <div class="items"><span id="eixo">Eixo temático:</span> <span id="eixo_valor"><strong> Alimentação e
                     saúde (AS)</strong></span></div>
-              <div class="items"><span id="palavras">Palavras-chaves:</span> <span
-                  id="palavras_valor"><strong>Alimentos funcionais, alimentação escolar.</strong></span></div>
+              <div class="items"><span id="palavras">Palavras-chaves:</span> <span id="palavras_valor"><strong>Alimentos
+                    funcionais, alimentação escolar.</strong></span></div>
               <div class="items"><span id="autores"><strong>Autores:</strong></span></div>
               <div class="items"><span id="autor1">Galileo Galilei¹</span></div>
               <div class="items"><span id="autor2">Berta Lange de Morretes²</span></div>
@@ -161,6 +179,7 @@
           <button id="overview-button">ver mais</button>
         </article>
       </section>
+
       <section id="discussions-container">
         <header id="discussions-container-header">
           <span>Discussões</span>
@@ -176,17 +195,17 @@
           <span>Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus
             questionamentos ou sugestões para o autor!</span>
           <button class="btn-create-topic">
-            <!-- <ion-icon name="add-outline"></ion-icon> -->
-            <span id="new-topic-container-btn">criar tópico</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M256 112v288M400 256H112"/></svg>
+            criar tópico
           </button>
         </section>
 
         <section id="new-topic-inputs" data-new-topic-inputs="false">
           <span>Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</span>
-          <div id="new-topic-container">
+          <form id="new-topic-container-form">
             <div id="new-topic-header">
               <span><strong>Assunto</strong></span>
-              <input type="text" placeholder="Defina um tópico sucinto para notificar os autores">
+              <input class="subject" placeholder="Defina um tópico sucinto para notificar os autores...">
             </div>
             <div id="new-topic-content">
               <span><strong>Conteúdo</strong></span>
@@ -195,7 +214,7 @@
             <div id="new-topic-footer">
               <button id="new-topic-inputs-btn">Enviar</button>
             </div>
-          </div>
+          </form>
         </section>
 
         <section id="sent-topic" data-sent-topic="false">
@@ -211,25 +230,15 @@
           <article class="comment-container" data-recently-created="true">
             <div class="authors-feedback">
               <span>
-                <!-- <ion-icon name="checkmark-done-outline"></ion-icon> -->
+                <svg style="height: 20px; width: 20px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M464 128L240 384l-96-96M144 384l-96-96M368 128L232 284"/></svg>
               </span>
-              <span>Aguardando feedbackdos autores</span>
+              <span>Aguardando feedback dos autores</span>
               <button id="posted-edition-button">Editar tópico</button>
 
               <h3 class="comment-subject"></h3>
               <span class="user-name"><strong></strong></span>
               <p class="comment-content"></p>
               <div class="discussions-btns-like-answers">
-                <!--  <button class="discussions-btns">
-                  <span class="dot"></span>
-                  <span class="dot"></span>
-                  <span class="dot"></span>
-                </button>
-                <button class="likes-btn">
-                  <ion-icon name="heart-outline"></ion-icon>
-                </button>
-                <span class="likes"><span class="like-numbs">0</span> like</span>
-                <span class="answers"><span class="anwers-numb">0</span> Resposta</span> -->
               </div>
             </div>
           </article>
@@ -247,7 +256,10 @@
                 <span class="dot"></span>
               </button>
               <button class="likes-btn">
-                <!-- <ion-icon name="heart-outline"></ion-icon> -->
+                <svg style="width: 100px; height:100px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path
+                    d="M256 360a16 16 0 01-9-2.78c-39.3-26.68-56.32-45-65.7-56.41-20-24.37-29.58-49.4-29.3-76.5.31-31.06 25.22-56.33 55.53-56.33 20.4 0 35 10.63 44.1 20.41a6 6 0 008.72 0c9.11-9.78 23.7-20.41 44.1-20.41 30.31 0 55.22 25.27 55.53 56.33.28 27.1-9.31 52.13-29.3 76.5-9.38 11.44-26.4 29.73-65.7 56.41A16 16 0 01256 360z" />
+                </svg>
               </button>
               <span class="likes"><span class="like-numbs">1</span> like</span>
               <span class="answers"><span class="anwers-numb">1</span> Resposta</span>
@@ -267,20 +279,23 @@
                 <span class="dot"></span>
               </button>
               <button class="likes-btn">
-                <!-- <ion-icon name="heart-outline"></ion-icon> -->
+                <svg style="width: 100px; height:100px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path
+                    d="M256 360a16 16 0 01-9-2.78c-39.3-26.68-56.32-45-65.7-56.41-20-24.37-29.58-49.4-29.3-76.5.31-31.06 25.22-56.33 55.53-56.33 20.4 0 35 10.63 44.1 20.41a6 6 0 008.72 0c9.11-9.78 23.7-20.41 44.1-20.41 30.31 0 55.22 25.27 55.53 56.33.28 27.1-9.31 52.13-29.3 76.5-9.38 11.44-26.4 29.73-65.7 56.41A16 16 0 01256 360z" />
+                </svg>
               </button>
               <span class="likes"><span class="like-numbs">4</span> like</span>
               <span class="answers"><span class="anwers-numb">4</span> Resposta</span>
             </div>
 
-            <div class="comments-container" data-comments="false">
+            <div class="comments-container" data-comments="true">
               <div class="comments">
                 <div class="answer-user">
-                  <span><strong>Adriano da Silva</strong></span>
+                  <span>Adriano da Silva</span>
                   <div class="writters">
-                    <span><strong>Autor</strong></span>
+                    <span>Autor</span>
                     <span>
-                      <!-- <ion-icon name="checkmark-done-outline"></ion-icon> -->
+                      <svg style="height: 20px; width: 20px;"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M464 128L240 384l-96-96M144 384l-96-96M368 128L232 284"/></svg>
                     </span>
                   </div>
                 </div>
@@ -291,11 +306,10 @@
                 </p>
               </div>
             </div>
-
-            <div class="comments-container" data-comments="false">
+            <div class="comments-container" data-comments="true">
               <div class="comments">
                 <div class="answer-user">
-                  <span><strong>Carlos Henrique Santos</strong></span>
+                  <span>Carlos Henrique Santos</span>
                 </div>
                 <p>
                   Consegui entender melhor agora! Parece que a variação da análise da dimensão e impacto de processo
@@ -304,14 +318,14 @@
                 </p>
               </div>
             </div>
-            <div class="comments-container" data-comments="false">
+            <div class="comments-container" data-comments="true">
               <div class="comments">
                 <div class="answer-user">
-                  <span><strong>Carmila Ferreira Andrade</strong></span>
+                  <span>Carmila Ferreira Andrade</span>
                   <div class="writters">
-                    <span><strong>Coautor</strong></span>
+                    <span>Coautor</span>
                     <span>
-                      <!-- <ion-icon name="checkmark-done-outline"></ion-icon> -->
+                      <svg style="height: 20px; width: 20px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M464 128L240 384l-96-96M144 384l-96-96M368 128L232 284"/></svg>
                     </span>
                   </div>
                 </div>
@@ -329,11 +343,11 @@
             <div class="comments-container" data-comments="true">
               <div class="comments">
                 <div class="answer-user">
-                  <span><strong>Ana Carolina</strong></span>
+                  <span>Ana Carolina</span>
                   <div class="writters">
                     <span><strong>Coautor</strong></span>
                     <span>
-                      <!-- <ion-icon name="checkmark-done-outline"></ion-icon> -->
+                      <svg style="height: 20px; width: 20px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M464 128L240 384l-96-96M144 384l-96-96M368 128L232 284"/></svg>
                     </span>
                   </div>
                 </div>
@@ -363,4 +377,5 @@
       </div>
     </footer>
   </div>
+
 </div>
