@@ -98,3 +98,129 @@ div#aside-container {
 	background-color: $background-color_1;
 }
 
+div#main-content-container {
+	width: 80vw;
+	margin-left: 19vw;
+
+	>* {
+		padding: 0 3.5%;
+	}
+
+	header#main-header {
+		display: flex;
+		justify-content: space-between;
+		height: 11vh;
+		background-color: $background-color_3;
+
+		div#main-header-title {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+
+			span {
+				color: $color_4;
+				font-family: $font-family_1;
+			}
+
+			>span {
+				&:nth-child(1) {
+					font-size: 10px;
+					font-weight: 400;
+					margin-top: 1%;
+				}
+
+				&:nth-child(2) {
+					font-size: 14px;
+					font-weight: 400;
+				}
+
+				&:nth-child(3) {
+					font-size: 10px;
+					font-weight: 400;
+				}
+			}
+		}
+
+		#main-header-lang-account {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			#main-header-lang {
+				display: flex;
+				align-items: center;
+				border: 1px solid #cccccc;
+				border-radius: 4px;
+				padding: 1%;
+
+				select {
+					color: $color_4;
+					font-size: 10px;
+					border: none;
+					background-color: transparent;
+				}
+			}
+
+			#main-header-account {
+				display: flex;
+				align-items: center;
+				margin-left: 5%;
+				font-family: $font-family_2;
+
+				div#account-info {
+					color: $color_4;
+					display: flex;
+					align-items: flex-end;
+					flex-direction: column;
+
+					>span {
+						font-size: 10px;
+
+						&:nth-child(1) {
+							font-weight: 400;
+						}
+
+						&:nth-child(2) {
+							font-weight: 300;
+						}
+					}
+				}
+
+				div#account-image-notif {
+					display: flex;
+					flex-direction: column;
+					align-items: flex-end;
+					position: relative;
+
+					#notifications {
+						position: absolute;
+						top: 0px;
+						right: 0px;
+						background-color: $background-color_4;
+						color: $color_1;
+						border-radius: 50%;
+						width: 10px;
+						height: 10px;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						z-index: 1;
+						font-size: 7px;
+					}
+				}
+			}
+		}
+	}
+}
+
+header#main-header {
+	#main-header-lang-account {
+		#main-header-account {
+			div#account-image-notif {
+				img {
+					width: 80%;
+				}
+			}
+		}
+	}
+}
