@@ -451,3 +451,228 @@ section[data-box-size="true"] {
 section[data-box-size="false"] {
 	max-height: initial;
 }
+
+section#discussions-container {
+	border: 1px solid #f1f1f1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 2.5%;
+	padding-bottom: 2%;
+
+	header#discussions-container-header {
+		width: 100%;
+		line-height: 2;
+		background-color: $background-color_3;
+		font-size: 16px;
+		font-weight: 500;
+		font-family: $font-family_1;
+		padding-left: 2%;
+		border-bottom: 1px solid #f1f1f1;
+	}
+
+	section#new-topic-container {
+		text-align: center;
+		border-bottom: 1px solid #f1f1f1;
+		margin-bottom: 4%;
+		padding-top: 2%;
+		width: 97%;
+
+		div#new-topic-images {
+			margin-bottom: 2%;
+
+			img {
+				height: 30px;
+				width: 30px;
+			}
+		}
+
+		>span {
+			&:nth-child(1) {
+				color: $color_3;
+				font-size: 13px;
+				font-family: $font-family_1;
+				font-weight: 700;
+				margin-bottom: 1.5%;
+				display: block;
+			}
+
+			&:nth-child(3) {
+				font-size: 12px;
+				font-weight: 400;
+				width: 90%;
+				display: block;
+				padding-bottom: 2%;
+				margin: 0 auto;
+				color: $color_5;
+				font-family: $font-family_2;
+			}
+		}
+
+		button {
+			display: block;
+			margin: 0 auto;
+			background: linear-gradient(to top, #ED7839, #FFB455);
+			border: none;
+			border-radius: 5px;
+			padding: 0.5% 1%;
+			display: flex;
+			align-items: center;
+			justify-content: space-evenly;
+			color: $color_1;
+			font-size: 12px;
+			cursor: pointer;
+			margin-bottom: -10px;
+		}
+	}
+}
+
+section[data-new-topic-container="true"] {
+	display: initial;
+}
+
+section[data-new-topic-container="false"] {
+	display: none;
+}
+
+section[data-new-topic-inputs="true"] {
+	display: initial;
+}
+
+section[data-new-topic-inputs="false"] {
+	display: none;
+}
+
+section#sent-topic {
+	padding-top: 2%;
+	padding-bottom: 2%;
+	width: 97%;
+	text-align: center;
+
+	>span {
+		display: block;
+		margin-bottom: 1%;
+
+		&:nth-child(1) {
+			font-size: 15px;
+			font-family: $font-family_1;
+			color: $color_3;
+		}
+
+		&:nth-child(2) {
+			font-size: 12px;
+			font-family: $font-family_2;
+		}
+
+		&:nth-child(3) {
+			font-size: 12px;
+			font-family: $font-family_2;
+			color: $color_3;
+			cursor: pointer;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	button {
+		font-size: 12px;
+		background: linear-gradient(to top, #ED7839, #FFB455);
+		font-family: $font-family_2;
+		width: 20%;
+		line-height: 2;
+		border: none;
+		font-weight: bold;
+		color: $color_1;
+		border-radius: 5px;
+		cursor: pointer;
+	}
+}
+
+section[data-sent-topic="true"] {
+	display: initial;
+}
+
+section[data-sent-topic="false"] {
+	display: none;
+}
+
+section#new-topic-inputs {
+	padding-top: 2%;
+	width: 97%;
+	font-size: 14px;
+	font-family: $font-family_2;
+	color: $color_5;
+	margin-bottom: 2%;
+
+	>span {
+		display: block;
+		text-align: center;
+		font-size: 13px;
+	}
+
+	form#new-topic-container-form {
+		span {
+			font-size: 12px;
+			display: block;
+			text-align: initial;
+			font-family: $font-family_2;
+		}
+
+		div#new-topic-header {
+			color: $color_3;
+			margin: 2% 0;
+
+			input {
+				font-family: $font-family_2;
+				border: 1px solid #f1f1f1;
+				width: 100%;
+				line-height: 2;
+				padding-left: 1%;
+				padding-right: 1%;
+				border-radius: 5px;
+				font-size: 10px;
+			}
+		}
+
+		div#new-topic-content {
+			color: $color_3;
+
+			textarea {
+				display: block;
+				width: 100%;
+				height: 90px;
+				border: 1px solid #f1f1f1;
+				padding: 1%;
+				resize: none;
+				border-top-left-radius: 5px;
+				border-top-right-radius: 5px;
+				font-size: 10px;
+			}
+		}
+
+		div#new-topic-footer {
+			text-align: right;
+			font-family: $font-family_1;
+			cursor: pointer;
+			background-color: none;
+			border: 1px solid #f1f1f1;
+			width: 100%;
+			float: right;
+			border-bottom-left-radius: 5px;
+			border-bottom-right-radius: 5px;
+
+			button {
+				line-height: 2;
+				width: 20%;
+				border: none;
+				color: $color_1;
+				font-size: 10px;
+				background: linear-gradient(to top, #ED7839, #FFB455);
+				cursor: pointer;
+			}
+		}
+	}
+}
+

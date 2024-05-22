@@ -180,9 +180,53 @@
         </article>
       </section>
 
-      
+      <section id="discussions-container">
+        <header id="discussions-container-header">
+          <span>Discussões</span>
+        </header>
+
+        <section id="new-topic-container" data-new-topic-container="true">
+          <span>Compartilhe suas ideias ou dúvidas com os autores!</span>
+          <div id="new-topic-images">
+            <img src="../assets/hand-plant.png" alt="hand-plant-logo">
+            <img src="../assets/QA.png" alt="QA-logo">
+            <img src="../assets/idea-logo.png" alt="idea-logo">
+          </div>
+          <span>Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus
+            questionamentos ou sugestões para o autor!</span>
+          <button class="btn-create-topic">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M256 112v288M400 256H112"/></svg>
+            criar tópico
+          </button>
+        </section>
+
+        <section id="new-topic-inputs" data-new-topic-inputs="false">
+          <span>Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</span>
+          <form id="new-topic-container-form">
+            <div id="new-topic-header">
+              <span><strong>Assunto</strong></span>
+              <input class="subject" placeholder="Defina um tópico sucinto para notificar os autores...">
+            </div>
+            <div id="new-topic-content">
+              <span><strong>Conteúdo</strong></span>
+              <textarea></textarea>
+            </div>
+            <div id="new-topic-footer">
+              <button id="new-topic-inputs-btn">Enviar</button>
+            </div>
+          </form>
+        </section>
+
+        <section id="sent-topic" data-sent-topic="false">
+          <span>Seu tópico foi enviado com sucesso! :D</span>
+          <span>Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico for
+            respondido!</span>
+          <span>Descubra outros trabalhos!</span>
+          <button id="sent-topic-btn">criar novo tópico</button>
+        </section>
+
+      </section>
     </main>
-  
   </div>
 
 </div>
